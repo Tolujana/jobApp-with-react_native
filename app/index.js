@@ -1,12 +1,21 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View,Text, ScrollView,SafeAreaView } from 'react-native'
+import { useState } from 'react'
+import { Stack,useRouter } from 'expo-router'
+import {COLORS,icons, images, SIZES} from'../constants'
+import {Nearbyjobs,
+  Popularjobs,
+  Company,
+  ScreenHeaderBtn,
+  Welcome,
+  } from '../components'
+// import React from 'react'
 
-const index = () => {
+const Home = () => {
   return (
     <View>
-      <Text>indeh</Text>
+      <Text>Home</Text>
     </View>
   )
 }
 
-export default index
+export default Home;
