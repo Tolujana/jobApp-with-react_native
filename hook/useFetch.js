@@ -13,7 +13,7 @@ const useFetch = ({ endPoint, query }) => {
 
   const options = {
     method: "GET",
-    url: `https://901522ec-fa4d-4b63-aecc-a237dc24ac90.mock.pstmn.io/jobs/`,
+    url: "https://901522ec-fa4d-4b63-aecc-a237dc24ac90.mock.pstmn.io/jobs/",
   };
 
   const fetchData = async () => {
