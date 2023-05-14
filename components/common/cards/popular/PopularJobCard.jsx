@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, TouchableOpacityBase } from "react-native";
+import { View, Text, TouchableOpacityBase, TouchableOpacity, Image } from "react-native";
 
 import styles from "./popularjobcard.style";
 
@@ -9,7 +9,7 @@ const PopularJobCard = ({ item, selectedJob, handleCardPress }) => {
       <TouchableOpacity style={styles.logoContainer(selectedJob, item)}>
         <Image source={{ uri: item.employer_logo }} resizeMode="contain" style={styles.logoImage} />
       </TouchableOpacity>
-      <Text style={styles.companyName} numberOfLines={1}>
+      <Text style={styles.companyName} numberOfLines={2}>
         {item.emploayer_name}
       </Text>
     </TouchableOpacity>
